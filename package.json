@@ -1,0 +1,13 @@
+{
+  "name"         : "college-football-rankings",
+  "version"      : "0.0.1",
+  "description"  : "Compute Rankings for college football teams based off of wins and losses",
+  "main"         : "get-ratings.js",
+  "author"       : "Matt Cappleman",
+  "repository"   : {
+    "type" : "git"
+  },
+  "dependencies" : {
+    "mongoose"   : "latest"
+  }
+}
