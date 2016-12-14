@@ -72,7 +72,7 @@ function computeRatings() {
 }
 
 var index = 0;
-var limit = 5000;
+var limit = 500;
 
 function startIteration(ratings) {
 	return new Promise((resolve, reject) => {
@@ -86,7 +86,7 @@ function startIteration(ratings) {
 			return iterateSchedule(data)
 			.then((data) => {
 				index++;
-				console.log('Iter Again', data['584f7f8d905ed90704427fd4'].straight, data['584f7f8d905ed90704427fd4'].margin_of_vicotry);
+				console.log('Iter Again', index);
 				iter(data);
 			})
 			.catch((err) => {
