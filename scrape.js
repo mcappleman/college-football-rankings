@@ -109,6 +109,8 @@ function insertGames() {
 			.then((data) => {
 				if(data !== null) {
 					resolve(data);
+				} else if(game.winner_points === 0 && game.loser_points === 0) {
+					resolve(null);
 				} else {
 					return Game.create(game);
 				}
