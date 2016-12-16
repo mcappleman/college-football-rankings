@@ -72,7 +72,7 @@ function computeRatings() {
 }
 
 var index = 0;
-var limit = 500;
+var limit = 5000;
 
 function startIteration(ratings) {
 	return new Promise((resolve, reject) => {
